@@ -78,8 +78,7 @@ h1 {
     letter-spacing: 0.1rem !important;
 }
 
-.text-body {
-    color: var(--primary-900);
+.text-body-p {
     font-family: Instrument Sans, sans-serif;
     font-weight: 400;
     font-size: var(--fs-md);

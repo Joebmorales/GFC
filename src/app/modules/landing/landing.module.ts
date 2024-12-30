@@ -9,12 +9,16 @@ import
     Calculator,
     ChartNoAxesColumn,
     ChartPie,
+    Clock,
     DollarSign,
     FileText,
     GraduationCap,
     HeartPulse,
     Landmark,
     LucideAngularModule,
+    Mail,
+    MapPin,
+    Phone,
     PiggyBank,
     RefreshCw,
     Shield,
@@ -22,7 +26,7 @@ import
     TrendingUp,
     UserCheck,
     UserPlus,
-    Users,
+    Users
   } from 'lucide-angular';
 import { AngularMaterialModule } from '../material/angular-material.module';
 import { AdditionalFormComponent } from './components/additional-form/additional-form.component';
@@ -68,7 +72,11 @@ import { ServicesComponent } from './pages/services/services.component';
       UserPlus,
       Award,
       ChartPie,
-      Book
+      Book,
+      Phone,
+      Mail,
+      Clock,
+      MapPin
     }),
   ],
   declarations: [

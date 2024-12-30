@@ -1,41 +1,34 @@
 import
   {
     impact,
-    partnerType,
     startingPoint
   } from '../../models/business.model';
-import { ICard } from '../../models/generic.model';
+import { ICard, IGenericList } from '../../models/generic.model';
 
-export const PARTNERTYPES_OPTIONS: partnerType[] = [
+export const PARTNERTYPES_OPTIONS: IGenericList[] = [
   {
-    title: 'Client',
-    subtitle: 'Become A',
-    body: 'Enhance your financial literacy and build the confidence to shape your financial destiny. Explore our financial strategies to secure your family’s future and embark on the path to retirement and wealth creation.',
+    title: 'Become A Client',
+    description: 'Enhance your financial literacy and build the confidence to shape your financial destiny. Explore our financial strategies to secure your family’s future and embark on the path to retirement and wealth creation.',
   },
   {
-    title: 'Referral Partner',
-    subtitle: 'Work With Us',
-    body: 'Become a referral partner and take advantage of a simple yet rewarding opportunity. By obtaining the necessary license, you can refer individuals you know to our financial services and, in return, earn referral income for helping them secure their financial future.',
+    title: 'Become A Referral Partner',
+    description: 'Become a referral partner and take advantage of a simple yet rewarding opportunity. By obtaining the necessary license, you can refer individuals you know to our financial services and, in return, earn referral income for helping them secure their financial future.',
   },
   {
     title: 'Revenue Sharing',
-    subtitle: 'Work With Us',
-    body: 'Join us as a revenue-sharing partner and leverage your expertise in professions such as CPA, accounting, real estate, law, and more to benefit your clients. By partnering with us, you can provide comprehensive financial solutions to your clients and share in the revenue generated, enhancing the value you bring to their financial well-being.',
+    description: 'Join us as a revenue-sharing partner and leverage your expertise in professions such as CPA, accounting, real estate, law, and more to benefit your clients. By partnering with us, you can provide comprehensive financial solutions to your clients and share in the revenue generated, enhancing the value you bring to their financial well-being.',
   },
   {
-    title: 'Part-Time',
-    subtitle: 'Work With Us',
-    body: 'Explore part-time opportunities as a financial professional where you can work from anywhere, on your own terms. Begin making a difference by assisting families with their financial goals as you work towards yours.',
+    title: 'Work With Us Part-Time',
+    description: 'Explore part-time opportunities as a financial professional where you can work from anywhere, on your own terms. Begin making a difference by assisting families with their financial goals as you work towards yours.',
   },
   {
-    title: 'Full-Time',
-    subtitle: 'Work With Us',
-    body: 'Unlock the potential of a full-time career in financial services with GFC, where you’ll discover numerous incentives, a proven system, and unwavering support to help you thrive.',
+    title: 'Work With Us Full-Time',
+    description: 'Unlock the potential of a full-time career in financial services with GFC, where you’ll discover numerous incentives, a proven system, and unwavering support to help you thrive.',
   },
   {
-    title: 'Agency Owner',
-    subtitle: 'Wecome An',
-    body: 'Become an agency owner with GFC and secure your future by building your own brand, with an opportunity to gain equity in the company, and unlocking unlimited potential in the financial industry.',
+    title: 'Become An Agency Owner',
+    description: 'Become an agency owner with GFC and secure your future by building your own brand, with an opportunity to gain equity in the company, and unlocking unlimited potential in the financial industry.',
   },
 ];
 
