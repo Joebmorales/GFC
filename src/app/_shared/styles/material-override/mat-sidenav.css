@@ -1,0 +1,15 @@
+.mat-mdc-nav-list .mat-mdc-list-item:hover {
+    border-bottom: 1px solid var(--secondary-300);
+}
+
+.mat-mdc-nav-list .mat-mdc-list-item.active {
+    border-bottom: 1px solid var(--secondary-300);
+}
+
+.mat-mdc-list-item, .mat-mdc-list-option {
+    width: inherit !important;
+}
+
+mat-option .mdc-list-item__primary-text{
+    color: var(--primary-900) !important;
+}

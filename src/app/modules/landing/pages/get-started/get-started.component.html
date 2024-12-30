@@ -1,0 +1,79 @@
+<div class="py-5 bg-accent-50">
+  <section id="sectionTitle" class="container align-content-center">
+    <div class="d-flex flex-column text-center gap-2 pb-5">
+      <h2>Start Your Insurance Application!</h2>
+      <h6>Take the first step toward securing your future with our tailored insurance solutions.</h6>
+    </div>
+
+    <ng-container *ngIf="!showForm">
+      <div class="row">
+        <div class="col-12 col-md-4 px-5 mb-4">
+          <mat-card appearance="outlined" class="transparent form-card" (click)="formType = FormTypeOption.Client">
+            <mat-card-content class="my-4 text-center">
+              <div class="d-flex justify-content-center mb-2">
+                <mat-icon class="medium" aria-hidden="false" aria-label="item.label"
+                  [fontIcon]="ServiceOptions[ServiceOption.Client].icon"></mat-icon>
+              </div>
+              <h6>{{ServiceOptions[ServiceOption.Client].title}}</h6>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-md-4 px-5 mb-4">
+          <mat-card appearance="outlined" class="transparent form-card" (click)="formType = FormTypeOption.Partner">
+            <mat-card-content class="my-4 text-center">
+              <div class="d-flex justify-content-center mb-2">
+                <mat-icon class="medium" aria-hidden="false" aria-label="item.label"
+                  [fontIcon]="ServiceOptions[ServiceOption.Partner].icon"></mat-icon>
+              </div>
+              <h6>{{ServiceOptions[ServiceOption.Partner].title}}</h6>
+            </mat-card-content>
+          </mat-card>
+        </div>
+
+        <div class="col-12 col-md-4 px-5 mb-4">
+          <mat-card appearance="outlined" class="transparent form-card" (click)="formType = FormTypeOption.General">
+            <mat-card-content class="my-4 text-center">
+              <div class="d-flex justify-content-center mb-2">
+                <mat-icon class="medium" aria-hidden="false" aria-label="item.label"
+                  [fontIcon]="ServiceOptions[ServiceOption.General].icon"></mat-icon>
+              </div>
+              <h6>{{ServiceOptions[ServiceOption.General].title}}</h6>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="showForm">
+      <ng-container *ngIf="showClientForm">
+        <app-client-form (onBackClicked)="resetApplication()" (onFormCompleted)="onClientFormCompleted($event)">
+        </app-client-form>
+      </ng-container>
+      <ng-container *ngIf="showPartnerForm">
+        <app-partner-form (onBackClicked)="resetApplication()"(onFormCompleted)="onPartnerFormCompleted($event)">
+        </app-partner-form>
+      </ng-container>
+      <ng-container *ngIf="showGeneralForm">
+        <app-general-form (onBackClicked)="resetApplication()"(onFormCompleted)="onGeneralFormCompleted($event)">
+        </app-general-form>
+      </ng-container>
+    </ng-container>
+  </section>
+</div>
+
+<section class="cta d-flex align-items-center justify-content-start">
+  <div class="cta-overlay"></div>
+  <div class="cta-content mx-5 w-100">
+    <div class="row">
+      <h2 class="col-12 col-md-7 text-white">Step Into A Brighter Future</h2>
+    </div>
+
+    <div class="row mt-3">
+      <p class="col-12 col-md-7 text-white">
+        You deserve the power to shape your financial future, turning your dreams into reality and leaving a lasting
+        impact on your life and the lives of others.
+      </p>
+    </div>
+  </div>
+</section>

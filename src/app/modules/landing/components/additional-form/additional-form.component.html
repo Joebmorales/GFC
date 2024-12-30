@@ -1,0 +1,30 @@
+<form autocomplete="off" [formGroup]="_form" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-12 col-md-6 my-2">
+      <mat-form-field class="w-100">
+        <mat-label for="preferred_language">Preferred language if other than English</mat-label>
+        <mat-select id="preferred_language" formControlName="preferred_language">
+          @for (item of PreferredLanguageOptions; track item.title) {
+          <mat-option [value]="item.value">{{item.title}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="col-12 col-md-6 my-2">
+      <mat-form-field class="w-100">
+        <mat-label for="find_us">How did you hear about us?</mat-label>
+        <mat-select id="find_us" formControlName="find_us">
+          @for (item of HearAboutOptions; track item.title) {
+          <mat-option [value]="item.value">{{item.title}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="col-12">
+      <mat-checkbox formControlName="has_consent">I hereby consent to receive calls from or on behalf of GFC Agency at
+        the telephone number provided above. I understand that consent is not a condition of purchase.</mat-checkbox>
+    </div>
+  </div>
+</form>
