@@ -52,13 +52,13 @@
   --mat-text-button-pressed-state-layer-opacity: 0.12;
 
   /* Flat button */
-  --mdc-filled-button-container-color: var(--primary-600);
+  --mdc-filled-button-container-color: var(--secondary-600);
   --mdc-filled-button-label-text-color: var(--neutral-50);
   --mdc-filled-button-disabled-container-color: var(--neutral-400);
   --mdc-filled-button-disabled-label-text-color: var(--neutral-700);
-  --mat-filled-button-state-layer-color: var(--primary-500);
+  --mat-filled-button-state-layer-color: var(--secondary-500);
   --mat-filled-button-disabled-state-layer-color: black;
-  --mat-filled-button-ripple-color: var(--primary-900);
+  --mat-filled-button-ripple-color: var(--secondary-900);
   --mat-filled-button-hover-state-layer-opacity: 0.04;
   --mat-filled-button-focus-state-layer-opacity: 0.12;
   --mat-filled-button-pressed-state-layer-opacity: 0.12;
@@ -70,7 +70,7 @@
   --mdc-protected-button-disabled-label-text-color: var(--neutral-700);
   --mat-protected-button-state-layer-color: var(--primary-500);
   --mat-protected-button-disabled-state-layer-color: black;
-  --mat-protected-button-ripple-color: var(--secondary-900);
+  --mat-protected-button-ripple-color: var(--primary-900);
   --mat-protected-button-hover-state-layer-opacity: 0.04;
   --mat-protected-button-focus-state-layer-opacity: 0.12;
   --mat-protected-button-pressed-state-layer-opacity: 0.12;
