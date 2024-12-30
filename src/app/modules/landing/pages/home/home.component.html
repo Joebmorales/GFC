@@ -7,9 +7,9 @@
     </div>
 
     <div class="row mt-3">
-      <h5 class="col-12 col-md-7 text-white ">
+      <h6 class="col-12 col-md-7 text-white ">
         Transform your financial future with personalized tools and expert mentorship.
-      </h5>
+      </h6>
     </div>
 
     <div class="row mt-5">
@@ -22,14 +22,14 @@
 
 <!-- Our philosophy -->
 <section class="container philosophy-section">
-  <div class="row bg-accent-100 p-5 rounded">
+  <div class="row bg-accent-100 p-5 mx-2 rounded">
     <div class="col-12 col-xl-5 border-right">
-      <h6 class="text-secondary-600">Our philosophy</h6>
-      <h2>We believe every dream can change the world.</h2>
+      <h6 class="text-secondary-600 pb-2 text-uppercase">Our philosophy</h6>
+      <h3>We believe every dream can change the world.</h3>
     </div>
 
     <div class="col-12 col-xl-7 align-content-center">
-      <p class="text-body pt-4 px-3">
+      <p class="text-body mx-xl-5 m-0 pt-4 p-xl-0">
         At GFC, <b class="text-primary-500">we focus on growing your wealth and turning it into a force for good.</b> We
         support you in achieving
         your
@@ -43,12 +43,12 @@
 
 <!-- Start your journey -->
 <section class="container align-content-center py-5 my-4">
-  <div class="d-flex flex-column text-center gap-2 py-2">
+  <div class="d-flex flex-column text-center gap-3 py-2">
     <h2>Start Your Journey</h2>
     <h6>We empower financial independence with solutions and mentorship.</h6>
   </div>
 
-  <div class="row py-5">
+  <div class="row pt-5">
     @for (item of ServicesItems; track item.title) {
     <div class="col-12 col-md-4 py-3">
       <mat-card class="h-100" appearance="outlined" class="transparent hoverable-card"
@@ -56,9 +56,9 @@
         <img [ngSrc]="item.image!" alt="Family spending time together" [title]="item.title" class="img-fluid p-2"
           width="1024" height="684" priority />
         <mat-card-content class="my-4">
-          <h5>
+          <h6 class="pb-2">
             {{item.title}}
-          </h5>
+          </h6>
           <p class="text-link">{{item.description}}</p>
         </mat-card-content>
       </mat-card>
@@ -71,12 +71,12 @@
 
 <!-- CTA -->
 <div class="py-5 bg-primary-900">
-  <section class="container align-content-center">
+  <section class="container align-content-center py-5 my-4">
     <div class="d-flex flex-column text-center align-items-center">
-      <h6 class="text-secondary-600">Help millions</h6>
+      <h6 class="text-secondary-600 pb-4 text-uppercase">Help millions</h6>
       <h2 class="text-white">This is the greatest opportunity to help millions protect, build, and secure their wealth.
       </h2>
-      <button mat-raised-button type="button" color="accent" class="mt-4" (click)="navigateToLink('get-started')">Start
+      <button mat-raised-button type="button" color="accent" class="mt-5" (click)="navigateToLink('get-started')">Start
         Now</button>
     </div>
   </section>
@@ -90,8 +90,8 @@
     </div>
     <div class="col-12 col-md-6" id="stat-card">
       <div class="d-flex flex-column gap-2 py-2">
-        <h2>$68 Trillion</h2>
-        <h6 class="mt-2">Generational Wealth is In Motion</h6>
+        <h2 class="pb-2">$68 Trillion</h2>
+        <h6>Generational Wealth is In Motion</h6>
       </div>
       <p class="text-body mt-2">
         The colossal exchange of $68 trillion in generational wealth represents a tremendous opportunity to reshape
@@ -106,8 +106,8 @@
   <div class="row align-items-center h-100 mt-5">
     <div class="col-12 col-md-6" id="stat-card">
       <div class="d-flex flex-column gap-2 py-2">
-        <h2>4.5 Billion</h2>
-        <h6 class="mt-2">People are Financially Illiterate</h6>
+        <h2 class="pb-2">4.5 Billion</h2>
+        <h6>People are Financially Illiterate</h6>
       </div>
       <p class="text-body mt-2">
         The alarming fact that 4.5 billion people suffer from financial illiteracy highlights the urgent need for
@@ -124,7 +124,7 @@
   <div class="row">
     <div class="col-12 col-lg-8">
       <div class="d-flex flex-column gap-2 py-2">
-        <h2 class="text-center text-md-start">Begin Your Journey With GFC</h2>
+        <h2 class="text-center text-md-start pb-2">Begin Your Journey With GFC</h2>
         <h6 class="text-center text-md-start">Begin your success with our expert services and guidance.</h6>
       </div>
       <div class="row py-5">
@@ -154,7 +154,7 @@
 <div class="bg-accent-100 py-5">
   <section class="container align-content-center">
     <div class="d-flex flex-column text-center gap-2 py-2">
-      <h2>Your Wealth, Our Mission</h2>
+      <h2 class="pb-2">Your Wealth, Our Mission</h2>
       <h6>Driven by numbers, powered by impact. Join thousands who trust us to protect, build, and
         secure their financial future.</h6>
     </div>
@@ -193,32 +193,31 @@
       </div>
     </div>
   </section>
-
-
-  <!-- Joe's Quote -->
-  <section class="container pt-3 pb-5 d-flex justify-content-center align-items-center">
-    <div class="row col-lg-10 col-12 shadow-lg rounded-2 p-3 fst-italic">
-      <div class="col-lg-4 col-12 d-flex justify-content-center  align-items-center">
-        <img ngSrc="assets/images/GFC-CEO.webp" alt="Placeholder Image" class="img-fluid mb-2 mb-lg-0 d-none d-lg-block" width="400" height="384"
-          style="border-radius: 50%;" />
-          <img ngSrc="assets/images/GFC-CEO.webp" alt="Placeholder Image" class="img-fluid w-50 mb-2 mb-lg-0 d-lg-none d-block" width="400" height="384"
-          style="border-radius: 50%;" />
-      </div>
-      <div class="col-12 col-lg-8 my-auto">
-        <p class="text-body">"I’m driven by a clear mission: to build and protect wealth for families. Through
-          personalized financial
-          solutions, I provide individuals with the peace of mind they need to secure their future, empowering them to
-          reach their goals and fulfill their dreams.</p>
-        <p class="text-body">
-          As a wealth strategist, I work with a diverse group of clients, professional athletes, business owners, Baby
-          Boomers, and families from all backgrounds. My focus is on maximizing wealth strategies that help each
-          client
-          build a strong financial foundation and future."</p>
-
-          <p class="fw-bold text-end">Joe Morales</p>
-          <p class="fw-light text-end" style="margin-top: -0.5rem;">CEO & Founder</p>
-      </div>
-    </div>
-  </section>
-
 </div>
+
+<!-- Joe's Quote -->
+<section class="container align-content-center py-5">
+  <div class="row shadow-lg rounded-2 p-5 fst-italic">
+    <div class="col-lg-4 col-12 d-flex justify-content-center  align-items-center">
+      <img ngSrc="assets/images/GFC-CEO.webp" alt="Placeholder Image" class="img-fluid mb-2 mb-lg-0 d-none d-lg-block"
+        width="400" height="384" style="border-radius: 50%;" />
+      <img ngSrc="assets/images/GFC-CEO.webp" alt="Placeholder Image"
+        class="img-fluid w-50 mb-2 mb-lg-0 d-lg-none d-block" width="400" height="384" style="border-radius: 50%;" />
+    </div>
+    
+    <div class="col-12 col-lg-8 my-auto">
+      <p class="text-body">"I’m driven by a clear mission: to build and protect wealth for families. Through
+        personalized financial
+        solutions, I provide individuals with the peace of mind they need to secure their future, empowering them to
+        reach their goals and fulfill their dreams.</p>
+      <p class="text-body">
+        As a wealth strategist, I work with a diverse group of clients, professional athletes, business owners, Baby
+        Boomers, and families from all backgrounds. My focus is on maximizing wealth strategies that help each
+        client
+        build a strong financial foundation and future."</p>
+
+      <p class="fw-bold text-end">Joe Morales</p>
+      <p class="fw-light text-end" style="margin-top: -0.5rem;">CEO & Founder</p>
+    </div>
+  </div>
+</section>

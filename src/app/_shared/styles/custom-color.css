@@ -387,6 +387,49 @@
 
 /* #endregion */
 
+/* #region ACCENT COLOR */
+.text-accent-50 {
+    color: var(--accent-50) !important;
+}
+
+.text-accent-100 {
+    color: var(--accent-100) !important;
+}
+
+.text-accent-200 {
+    color: var(--accent-200) !important;
+}
+
+.text-accent-300 {
+    color: var(--accent-300) !important;
+}
+
+.text-accent-400 {
+    color: var(--accent-400) !important;
+}
+
+.text-accent-500 {
+    color: var(--accent-500) !important;
+}
+
+.text-accent-600 {
+    color: var(--accent-600) !important;
+}
+
+.text-accent-700 {
+    color: var(--accent-700) !important;
+}
+
+.text-accent-800 {
+    color: var(--accent-800) !important;
+}
+
+.text-accent-900 {
+    color: var(--accent-900) !important;
+}
+
+/* #endregion */
+
 /* #region INFO COLOR */
 .text-info-50 {
     color: var(--info-50) !important;

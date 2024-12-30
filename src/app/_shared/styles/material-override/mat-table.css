@@ -2,3 +2,7 @@ mat-row.mat-mdc-row:hover {
     background-color: var(--primary-overlay);
     cursor: pointer;
 }
+
+.mat-mdc-nav-list .mat-mdc-list-item.thin .mdc-list-item__primary-text{
+    font-size: var(--fs-sm);
+}

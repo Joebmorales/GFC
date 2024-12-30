@@ -67,7 +67,6 @@ export class GetStartedComponent implements OnInit
 
       }
     });
-    
   }
 
   public onPartnerFormCompleted(partnerFormValue: GHL.IPartner): void

@@ -30,7 +30,6 @@ export class LandingComponent implements OnInit
 
   }
 
-  
   public redirectTo(url: string, target: string = '_blank'): void
   {
     window.open(url, target);

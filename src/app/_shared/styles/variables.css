@@ -94,8 +94,37 @@
     --error-700: #B53A3A;
     --error-800: #8C2D2D;
     --error-900: #6B2222;
-    
+
     /* #region Text styles */
+    /* Font size */
+    /* 60px */
+    --fs-h1: clamp(3.5rem, 7vw, 5.5rem);
+    /* 48px */
+    --fs-h2: clamp(3rem, 5.5vw, 4.5rem);
+    /* 40px */
+    --fs-h3: clamp(2.5rem, 4vw, 3.5rem);
+    /* 32px */
+    --fs-h4: clamp(2rem, 3.5vw, 2.5rem);
+    /* 24px */
+    --fs-h5: clamp(1.5rem, 3vw, 2rem);
+    /* 20px */
+    --fs-h6: clamp(1.25rem, 2vw, 1.5rem);
+
+
+    /* Line height */
+    /* 80px */
+    --lh-h1: clamp(3.5rem, 6vw, 5.75rem);
+    /* 48px */
+    --lh-h2: clamp(2.5rem, 5vw, 4rem);
+    /* 40px */
+    --lh-h3: clamp(2rem, 4vw, 3rem);
+    /* 32px */
+    --lh-h4: clamp(1.75rem, 3vw, 2.5rem);
+    /* 28px */
+    --lh-h5: clamp(1.5rem, 2.5vw, 2rem);
+    /* 24px */
+    --lh-h6: clamp(1.25rem, 2vw, 1.75rem);
+
     /* Font size */
     /* 10px */
     --fs-xxsm: 0.625rem;
@@ -115,19 +144,20 @@
     --fs-xxxlg: 1.5rem;
 
     /* Line height */
-    /* 16px */
-    --lh-xxsm: 1.5rem;
-    /* 24px */
-    --lh-xsm: clamp(1rem, 1.2vw, 1.5rem);
-    /* 32px */
-    --lh-sm: clamp(1.5rem, 2vw, 2rem);
+    /* 20px */
+    --lh-xxsm: clamp(1rem, 1vw, 1.25rem);
+    /* 28px */
+    --lh-xsm: clamp(1.25rem, 1.5vw, 1.75rem);
     /* 36px */
-    --lh-md: clamp(2rem, 3vw, 2.25rem);
-    /* 56px */
-    --lh-lg: clamp(2.25rem, 4vw, 3.5rem);
-    /* 72px */
-    --lh-xlg: clamp(3rem, 5vw, 4rem);
-    /* 120px */
-    --lh-xxlg: clamp(4.125rem, 8vw, 7.5rem);
+    --lh-sm: clamp(1.75rem, 2vw, 2.25rem);
+    /* 44px */
+    --lh-md: clamp(2rem, 3vw, 2.75rem);
+    /* 64px */
+    --lh-lg: clamp(2.75rem, 4.5vw, 4rem);
+    /* 80px */
+    --lh-xlg: clamp(3.5rem, 6vw, 5rem);
+    /* 128px */
+    --lh-xxlg: clamp(5rem, 8vw, 8rem);
+
     /* #endregion */
 }
