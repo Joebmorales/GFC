@@ -2,7 +2,8 @@
     <mat-drawer #sideNavigationBar mode="over" class="glass-bg d-block d-lg-none w-100">
         <!-- Toggle sidenav button -->
         <mat-toolbar class="bg-primary-800" style="height: 100px;">
-            <button mat-icon-button aria-label="Example icon-button with menu icon" (click)="toggleSidenav()" class="text-white">
+            <button mat-icon-button aria-label="Example icon-button with menu icon" (click)="toggleSidenav()"
+                class="text-white">
                 <mat-icon>close</mat-icon>
             </button>
         </mat-toolbar>
@@ -24,16 +25,17 @@
 
     <mat-drawer-content>
         <section #navigationBar>
-            <div class="bg-primary-800" style="height: 100px;"></div>
-            <mat-toolbar class="glass-bg justify-content-between px-4 position-fixed top-0 z-3" style="height: 100px;">
+            <div class="bg-primary-800" style="height: 80px;"></div>
+            <mat-toolbar class="glass-bg justify-content-between px-4 position-fixed top-0 z-3" style="height: 80px;">
                 <!-- Toggle sidenav button -->
                 <span class="d-block d-lg-none me-4 me-lg-0">
-                    <button mat-icon-button aria-label="Example icon-button with menu icon" (click)="toggleSidenav()" class="text-white">
+                    <button mat-icon-button aria-label="Example icon-button with menu icon" (click)="toggleSidenav()"
+                        class="text-white">
                         <mat-icon>menu</mat-icon>
                     </button>
                 </span>
                 <!-- Logo -->
-                <img ngSrc="assets/images/logos/horizontal-logo.svg" alt="GFC logo" class="img-fluid" priority width="150" height="100">
+                <img ngSrc="assets/images/logos/horizontal-logo.svg" alt="GFC logo" class="img-fluid" priority width="200" height="100">
                 <!-- <span class="toolbar-spacer"></span> -->
                 <!-- Menu -->
                 <mat-nav-list class="d-none d-lg-flex gap-2">
@@ -61,8 +63,8 @@
         <footer class="container-fluid bg-primary-900">
             <div class="row justify-content-center p-5">
                 <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center text-md-start">
-                    <img ngSrc="assets/images/logos/normal-logo.svg" alt="GFC logo" class="img-fluid mb-4"
-                        width="200" height="100" loading="lazy">
+                    <img ngSrc="assets/images/logos/normal-logo.svg" alt="GFC logo" class="img-fluid mb-4" width="200"
+                        height="100" loading="lazy">
 
                     <div class="d-flex flex-column gap-3 px-3">
                         <div class="d-flex align-items-center gap-2">
@@ -86,7 +88,7 @@
                         @for (item of NavigationItems; track item.displayName) {
                         <ng-container *ngIf="item.isActive">
                             <mat-list-item [routerLink]="item.link" class="thin">
-                                    {{item.displayName}}
+                                {{item.displayName}}
                             </mat-list-item>
                         </ng-container>
                         } @empty {
@@ -113,7 +115,8 @@
                 <div class="col-12 col-md-4 order-3 mt-4 mt-md-0">
                     <div class="text-white text-footer">Get Updates</div>
                     <p class="text-white mt-3">
-                        "Thank you for visiting! We're committed to providing exceptional service. Stay connected with us for the latest updates."
+                        "Thank you for visiting! We're committed to providing exceptional service. Stay connected with
+                        us for the latest updates."
                     </p>
                     <mat-form-field appearance="outline" class="mt-4">
                         <mat-label>Enter your email address</mat-label>
