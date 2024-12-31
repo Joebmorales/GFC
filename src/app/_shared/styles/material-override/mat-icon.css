@@ -3,7 +3,7 @@ mat-icon.mat-primary {
 }
 
 mat-icon.mat-accent {
-    color: var(--pink) !important;
+    color: var(--secondary-600) !important;
 }
 
 mat-icon.mat-warn {
