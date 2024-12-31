@@ -35,7 +35,9 @@
                     </button>
                 </span>
                 <!-- Logo -->
-                <img ngSrc="assets/images/logos/horizontal-logo.svg" alt="GFC logo" class="img-fluid" priority width="200" height="100">
+                 <div (click)="navigateToHome()" class="clickable d-flex align-items-center">
+                     <img ngSrc="assets/images/logos/horizontal-logo.svg" alt="GFC logo" class="img-fluid" priority width="200" height="100">
+                 </div>
                 <!-- <span class="toolbar-spacer"></span> -->
                 <!-- Menu -->
                 <mat-nav-list class="d-none d-lg-flex gap-2">
@@ -63,8 +65,8 @@
         <footer class="container-fluid bg-primary-900">
             <div class="row justify-content-center p-5">
                 <div class="col-12 col-md-4 d-flex flex-column align-items-center text-center text-md-start">
-                    <img ngSrc="assets/images/logos/normal-logo.svg" alt="GFC logo" class="img-fluid mb-4" width="200"
-                        height="100" loading="lazy">
+                    <img ngSrc="assets/images/logos/normal-logo.svg" alt="GFC logo" class="img-fluid mb-4 clickable" width="200"
+                        height="100" loading="lazy" (click)="navigateToHome()">
 
                     <div class="d-flex flex-column gap-3 px-3">
                         <div class="d-flex align-items-center gap-2">

@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
 import { NAVITAGION_ITEMS, SOCIAL_MEDIA_ITEMS } from '../../_core/constants/navigation.const';
 
 @Component({
@@ -14,7 +15,7 @@ export class LandingComponent implements OnInit
 
   @ViewChild('sideNavigationBar') public sideNavigationBar!: MatDrawer;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit()
   {
@@ -33,5 +34,10 @@ export class LandingComponent implements OnInit
   public redirectTo(url: string, target: string = '_blank'): void
   {
     window.open(url, target);
+  }
+
+  navigateToHome(): void
+  {
+    this.router.navigate(['home']);
   }
 }
