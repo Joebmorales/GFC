@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.50 }
     );
 
     statsObserver.observe(this.statsConatiner.nativeElement);
