@@ -1,4 +1,5 @@
 export interface IGenericList {
+  image?: string;
   title: string;
   description: string;
 }

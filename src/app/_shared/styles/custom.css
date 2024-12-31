@@ -70,11 +70,10 @@ h1 {
 }
 
 .text-disabled {
-    color: var(--surface-disabled);
-    font-family: "Montserrat";
+    color: var(--accent-500);
     font-weight: 400;
-    font-size: var(--fs-xsm);
-    line-height: var(--lh-sm);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-xsm);
     letter-spacing: 0.1rem !important;
 }
 
@@ -83,6 +82,13 @@ h1 {
     font-weight: 400;
     font-size: var(--fs-md);
     line-height: var(--lh-xsm);
+    letter-spacing: 0.063rem !important;
+}
+
+.text-label {
+    font-weight: 400;
+    font-size: var(--fs-md);
+    line-height: var(--lh-xxsm);
     letter-spacing: 0.063rem !important;
 }
 

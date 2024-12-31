@@ -109,7 +109,7 @@
         <div class="row">
           <ng-container *ngIf="isLifeInsurance">
             <div class="col-12 my-2">
-              <mat-label>What life insurance products are you interested in?</mat-label>
+              <div class="text-label">What life insurance products are you interested in?</div>
               <p class="text-disabled">Select all that apply</p>
               <div class="row">
                 @for (item of InsuranceInterestOptions; let index = $index; track item.title) {
@@ -164,7 +164,7 @@
             </div>
 
             <div class="col-12 col-md-6 my-2">
-              <mat-label>Annual income range:</mat-label>
+              <div class="text-label">Annual income range:</div>
               <mat-slider min="0" max="250000" step="10000" showTickMarks discrete [displayWith]="formatLabel"
                 class="w-100">
                 <input matSliderThumb formControlName="annual_income">
@@ -172,7 +172,7 @@
             </div>
 
             <div class="col-12 col-md-6 my-2">
-              <mat-label>Currently saving per month:</mat-label>
+              <div class="text-label">Currently saving per month:</div>
               <mat-slider min="0" max="25000" step="1000" showTickMarks discrete [displayWith]="formatLabel"
                 class="w-100">
                 <input matSliderThumb formControlName="saving_per_month">
@@ -180,7 +180,7 @@
             </div>
 
             <div class="col-12 col-md-6 my-2">
-              <mat-label>How much more could you save? (monthly):</mat-label>
+              <div class="text-label">How much more could you save? (monthly):</div>
               <mat-slider min="0" max="25000" step="1000" showTickMarks discrete [displayWith]="formatLabel"
                 class="w-100">
                 <input matSliderThumb formControlName="save_more">
@@ -190,7 +190,7 @@
 
           <ng-container *ngIf="isWealthInsurance">
             <div class="col-12 col-md-6 my-2">
-              <mat-label>Currently saving per month:</mat-label>
+              <div class="text-label">Currently saving per month:</div>
               <mat-slider min="0" max="25000" step="1000" showTickMarks discrete [displayWith]="formatLabel"
                 class="w-100">
                 <input matSliderThumb formControlName="saving_per_month">
@@ -198,7 +198,7 @@
             </div>
 
             <div class="col-12 col-md-6 my-2">
-              <mat-label>How much more could you save? (monthly):</mat-label>
+              <div class="text-label">How much more could you save? (monthly):</div>
               <mat-slider min="0" max="25000" step="1000" showTickMarks discrete [displayWith]="formatLabel"
                 class="w-100">
                 <input matSliderThumb formControlName="save_more">
@@ -206,7 +206,7 @@
             </div>
 
             <div class="col-12 my-2">
-              <mat-label>Current saving vehicles</mat-label>
+              <div class="text-label">Current saving vehicles</div>
               <div class="row">
                 @for (item of CurrentSavingsOptions; track item.title) {
                 <mat-checkbox class="col-2 col-md-3" [value]="item.value" (change)="toggleCurrentSaving(item)">
@@ -219,7 +219,7 @@
             </div>
 
             <div class="col-12 my-2">
-              <mat-label>What is most important to you?</mat-label>
+              <div class="text-label">What is most important to you?</div>
               <p class="text-disabled">Select all that apply</p>
               <div class="row">
                 @for (item of InsuranceMattersOptions; let index = $index; track item.title) {

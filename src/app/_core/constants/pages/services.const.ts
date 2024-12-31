@@ -1,3 +1,4 @@
+import { IGenericList } from "../../models/generic.model";
 import { IServicesList } from "../../models/services.model";
 
 export const INSURANCE_ITEMS: IServicesList[] = [
@@ -95,4 +96,29 @@ export const PARTNERS: string[] = [
     "assets/images/partners/prudential.webp",
     "assets/images/partners/securian.webp",
     "assets/images/partners/silac.webp"
+];
+
+
+export const STEP_BY_STEP: IGenericList[] = [
+  {
+    title: 'Step 1',
+    description:
+      'Request your complimentary consultation',
+    image:
+      'assets/images/form.webp',
+  },
+  {
+    title: 'Step 2',
+    description:
+      'Get matched with a qualified agent',
+    image:
+      'assets/images/charts.webp',
+  },
+  {
+    title: 'Step 3',
+    description:
+      'Gain confidence in Your financial future',
+    image:
+      'assets/images/business5.webp',
+  },
 ];
