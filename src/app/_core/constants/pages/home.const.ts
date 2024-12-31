@@ -1,4 +1,4 @@
-import { ICard } from "../../models/generic.model";
+import { ICard, IStat } from "../../models/generic.model";
 
 export const SERVICES_ITEMS: ICard[] = [
   {
@@ -42,4 +42,36 @@ export const JOURNEY_START_POINTS: ICard[] = [
       description: "Access valuable financial education resources to enhance your knowledge and decision-making.",
       image: "sliders", // Icono de Lucide para estrategias personalizadas
     }
+  ];
+
+export const STATS: IStat[] = [
+    {
+      endValue: 10,
+      prefix: '+',
+      startValue: 0,
+      title: 'Years of experience',
+      description:
+        'Helping individuals and families achieve financial independence.',
+    },
+    {
+      endValue: 1000,
+      startValue: 0,
+      title: 'Success Stories',
+      description: 'Real lives impacted through our proven strategies.',
+    },
+    {
+      endValue: 10,
+      prefix: '+',
+      suffix: 'M',
+      startValue: 0,
+      title: 'Wealth Managed',
+      description: 'Securing and growing financial assets worldwide.',
+    },
+    {
+      endValue: 33,
+      suffix: '+',
+      startValue: 0,
+      title: 'Countries',
+      description: 'Delivering global financial solutions with a local touch.',
+    },
   ];
