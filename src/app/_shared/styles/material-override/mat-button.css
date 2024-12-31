@@ -47,6 +47,7 @@
 
 .mat-mdc-raised-button.mat-accent {
     --mdc-protected-button-container-color: var(--secondary-500);
+    --mat-protected-button-ripple-color: var(--secondary-700);
     --mdc-protected-button-label-text-color: black;
     --mat-protected-button-state-layer-color: black;
     --mat-protected-button-ripple-color: rgba(0, 0, 0, 0.1)

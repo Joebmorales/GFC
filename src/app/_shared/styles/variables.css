@@ -106,9 +106,9 @@
     /* 32px */
     --fs-h4: clamp(2rem, 3.5vw, 2.5rem);
     /* 24px */
-    --fs-h5: clamp(1.5rem, 3vw, 2rem);
+    --fs-h5: clamp(1.25rem, 2vw, 1.5rem);
     /* 20px */
-    --fs-h6: clamp(1.25rem, 2vw, 1.5rem);
+    --fs-h6: clamp(.75rem, 2vw, 1rem);
 
 
     /* Line height */
