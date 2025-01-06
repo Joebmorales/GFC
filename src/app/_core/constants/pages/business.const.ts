@@ -149,7 +149,7 @@ export const STARTING_POINTS: startingPoint[] = [
     description:
       'Get to know our dedicated team of professionals who will guide and support you on your path to success.',
     image:
-      'assets/images/business5.webp',
+      'assets/images/step3.webp',
   },
 ];
 
