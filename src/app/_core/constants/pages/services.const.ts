@@ -105,20 +105,20 @@ export const STEP_BY_STEP: IGenericList[] = [
     description:
       'Request your complimentary consultation',
     image:
-      'assets/images/form.webp',
+      'assets/images/step1.webp',
   },
   {
     title: 'Step 2',
     description:
       'Get matched with a qualified agent',
     image:
-      'assets/images/charts.webp',
+      'assets/images/step2.webp',
   },
   {
     title: 'Step 3',
     description:
       'Gain confidence in Your financial future',
     image:
-      'assets/images/business5.webp',
+      'assets/images/family11.webp',
   },
 ];
