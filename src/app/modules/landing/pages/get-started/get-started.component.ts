@@ -1,10 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Meta } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { FORM_TITLES, SERVICE_OPTIONS } from '../../../../_core/constants/form.const';
 import { FORM_TYPE } from '../../../../_core/enums/form.enum';
 import { CLIENT_SERVICE_OPTION, SERVICE_OPTION } from '../../../../_core/enums/service.enum';
 import { GHL } from '../../../../_core/models/ghl.models';
 import { GHLService } from '../../../../_core/services/ghl.service';
+import { SucessDialogComponent } from '../../components/sucess-dialog/sucess-dialog.component';
 
 @Component({
   selector: 'app-get-started',
@@ -21,6 +24,7 @@ export class GetStartedComponent implements OnInit
   public firstFormValid: boolean = false;
   public formType: FORM_TYPE = FORM_TYPE.None;
 
+  readonly dialog = inject(MatDialog);
   private _clientFormValue!: GHL.IClient;
   private _partnerFormValue!: GHL.IPartner;
   private _generalFormValue !: GHL.IGeneral;
@@ -51,7 +55,7 @@ export class GetStartedComponent implements OnInit
     return this.formType != FORM_TYPE.None;
   }
 
-  constructor(private GHLService: GHLService, private meta: Meta) { }
+  constructor(private GHLService: GHLService, private router: Router, private meta: Meta) { }
 
   ngOnInit()
   {
@@ -63,6 +67,7 @@ export class GetStartedComponent implements OnInit
     this.GHLService.postClientForm(clientFormValue).subscribe({
       next: (response: boolean) =>
       {
+        this.openDialog();
       },
       error: () =>
       {
@@ -76,6 +81,7 @@ export class GetStartedComponent implements OnInit
     this.GHLService.postPartnerForm(partnerFormValue).subscribe({
       next: (response: boolean) =>
       {
+        this.openDialog();
       },
       error: () =>
       {
@@ -89,11 +95,20 @@ export class GetStartedComponent implements OnInit
     this.GHLService.postGeneralForm(generalFormValue).subscribe({
       next: (response: boolean) =>
       {
+        this.openDialog();
       },
       error: () =>
       {
 
       }
+    });
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(SucessDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      this.router.navigate(['/']);  
     });
   }
 
