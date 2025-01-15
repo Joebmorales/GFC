@@ -1,3 +1,22 @@
 .cta {
-    background-image: url('/assets/images/family9.webp');
+  background-image: url('/assets/images/family9.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60dvh;
+  position: relative;
+}
+
+.cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 27, 57, 0.5);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
 }

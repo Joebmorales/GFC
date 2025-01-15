@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { FAQS_BUSINESS_PLATFORM_ITEMS } from '../../../../_core/constants/faqs.const';
 import
@@ -26,11 +27,14 @@ export class BusinessPlatformComponent implements OnInit
   public readonly FaqsItems = FAQS_BUSINESS_PLATFORM_ITEMS;
   public readonly PartnerPerks = PARTNER_PERKS;
 
-  constructor(private router: Router)
+  constructor(private router: Router, private meta: Meta)
   {
   }
 
-  ngOnInit() { }
+  ngOnInit()
+  {
+    this.meta.addTag({ name: 'Global Financial Catalyst Business Platforms', content: 'This page includes information about how to become a Global Financial Catalyst partner, including benefits and 6 ways to partner. A frequently asked questions sectyion regarding becoming a partner' });
+  }
 
   navigateToLink(link: string): void
   {

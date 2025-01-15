@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { FORM_TITLES, SERVICE_OPTIONS } from '../../../../_core/constants/form.const';
 import { FORM_TYPE } from '../../../../_core/enums/form.enum';
 import { CLIENT_SERVICE_OPTION, SERVICE_OPTION } from '../../../../_core/enums/service.enum';
@@ -50,10 +51,11 @@ export class GetStartedComponent implements OnInit
     return this.formType != FORM_TYPE.None;
   }
 
-  constructor(private GHLService: GHLService) { }
+  constructor(private GHLService: GHLService, private meta: Meta) { }
 
   ngOnInit()
   {
+    this.meta.addTag({ name: 'Get started with Global Financial Catalyst', content: 'This page is a form to start your financial journey and conect with Global Financial Catalyst' });
   }
 
   public onClientFormCompleted(clientFormValue: GHL.IClient): void

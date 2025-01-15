@@ -101,23 +101,23 @@ export const PARTNERS: string[] = [
 
 export const STEP_BY_STEP: IGenericList[] = [
   {
-    title: 'Step 1',
+    title: 'Request Your Complimentary Consultation',
     description:
-      'Request your complimentary consultation',
+      'Start your journey towards financial success by completing our request form to learn more about our services and how we can assist you.',
     image:
       'assets/images/step1.webp',
   },
   {
-    title: 'Step 2',
+    title: 'Get Matched with a Qualified Agent',
     description:
-      'Get matched with a qualified agent',
+      'We’ll pair you with an experienced agent who understands your unique financial needs and guide you to success.',
     image:
       'assets/images/step2.webp',
   },
   {
-    title: 'Step 3',
+    title: 'Gain Confidence in Your Financial Future',
     description:
-      'Gain confidence in Your financial future',
+      'Find peace of mind and confidence as you embark on a journey toward a secure and prosperous future. ',
     image:
       'assets/images/family11.webp',
   },
