@@ -34,6 +34,7 @@ import { ClientFormComponent } from './components/client-form/client-form.compon
 import { GeneralFormComponent } from './components/general-form/general-form.component';
 import { InsuranceTypeFormComponent } from './components/insurance-type-form/insurance-type-form.component';
 import { PartnerFormComponent } from './components/partner-form/partner-form.component';
+import { SucessDialogComponent } from './components/sucess-dialog/sucess-dialog.component';
 import { LandingComponent } from './landing.component';
 import { LandingRoutes } from './landing.routes';
 import { BusinessPlatformComponent } from './pages/business-platform/business-platform.component';
@@ -53,6 +54,7 @@ import { ServicesComponent } from './pages/services/services.component';
     ClientFormComponent,
     AdditionalFormComponent,
     InsuranceTypeFormComponent,
+    SucessDialogComponent,
     LucideAngularModule.pick({
       PiggyBank,
       Shield,
