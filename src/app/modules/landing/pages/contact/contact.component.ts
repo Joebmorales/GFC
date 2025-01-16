@@ -8,31 +8,28 @@ import { GHLService } from '../../../../_core/services/ghl.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
 })
-export class ContactComponent implements OnInit
-{
+export class ContactComponent implements OnInit {
   public readonly ContactInfo = CONTACT_INFO;
 
-  constructor(private GHLService: GHLService) { }
+  constructor(private GHLService: GHLService) {}
 
-  ngOnInit()
-  {
-  }
+  ngOnInit() {}
 
-  public onGeneralFormCompleted(generalFormValue: GHL.IGeneral): void
-  {
+  public onGeneralFormCompleted(generalFormValue: GHL.IGeneral): void {
     this.GHLService.postGeneralForm(generalFormValue).subscribe({
-      next: (response: boolean) =>
-      {
-      },
-      error: () =>
-      {
-
-      }
+      next: (response: boolean) => {},
+      error: () => {},
     });
   }
 
-  public redirectToCalendly(): void
-  {
-    window.open('https://calendly.com/gficatalyst/60min?month=2024-10&date=2024-10-13', '_blank');
+  public scrollToForm(): void {
+    const formElement = document.querySelector('form') as HTMLElement;
+    if (formElement) {
+      const offset = -300; 
+      const elementPosition =
+        formElement.getBoundingClientRect().top + window.scrollY + offset;
+
+      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
+    }
   }
 }
