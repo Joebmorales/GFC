@@ -46,7 +46,7 @@ export const JOURNEY_START_POINTS: ICard[] = [
 
 export const STATS: IStat[] = [
     {
-      endValue: 10,
+      endValue: 40,
       prefix: '+',
       startValue: 0,
       title: 'Years of experience',
@@ -60,7 +60,7 @@ export const STATS: IStat[] = [
       description: 'Real lives impacted through our proven strategies.',
     },
     {
-      endValue: 10,
+      endValue: 100,
       prefix: '+',
       suffix: 'M',
       startValue: 0,
